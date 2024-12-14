@@ -61,6 +61,7 @@ const CarCard = ({ car }) => {
               fill
               priority
               className="object-contain"
+              loading='eager' 
             />
         </div>
 
@@ -68,17 +69,17 @@ const CarCard = ({ car }) => {
           <div className='flex group-hover:invisible w-full justify-between text-grey'>
 
             <div className='flex flex-col justify-center items-center gap-2'>
-              <Image src='/steering-wheel.svg' width={20} height={20} alt='steering wheel' />
+              <Image src='/steering-wheel.svg' width={20} height={20} alt='steering wheel' loading='eager'  />
               <p className='text-[14px] leading-[17px]'>{transmission}</p>
             </div>
 
             <div className="flex flex-col justify-center items-center gap-2">
-              <Image src="/tire.svg" width={20} height={20} alt="seat" />
+              <Image src="/tire.svg" width={20} height={20} alt="seat" loading='eager' />
               <p className="car-card__icon-text">{year}</p>
             </div>
 
             <div className="flex flex-col justify-center items-center gap-2">
-              <Image src="/gas.svg" width={20} height={20} alt="seat" />
+              <Image src="/gas.svg" width={20} height={20} alt="seat"  loading='eager' />
               <p className="car-card__icon-text">{fuelType}</p>
             </div>
           </div>

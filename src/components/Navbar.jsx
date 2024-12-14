@@ -14,6 +14,7 @@ const Navbar = () => {
           width={118}
           height={18}
           className='object-contain'
+          loading='eager' 
         />
       </Link>
 

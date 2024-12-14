@@ -43,6 +43,7 @@ const CardDetails = ({ isOpen, closeModal, car }) => {
                       width={20}
                       height={20}
                       className='object-contain'
+                      loading='eager' 
                     />
                   </button>
 
